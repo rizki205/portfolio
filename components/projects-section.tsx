@@ -12,7 +12,6 @@ import {
   FileText,
   Box,
 } from "lucide-react"
-import Image from "next/image"
 
 const projects = [
   {
@@ -22,7 +21,7 @@ const projects = [
       "AI-powered mobile application designed in collaboration with a team to detect PMK (Foot-and-Mouth Disease) in cattle using image recognition technology.",
     tags: ["Mobile App", "AI", "Team Project"],
     icon: Smartphone,
-    image: "/project-snapmoo.jpeg",
+    image: "project-snapmoo.jpeg",
   },
   {
     title: "BUMDes Panca Mukti SIAK",
@@ -49,7 +48,7 @@ const projects = [
       "UI/UX design for a community service and reporting forum application, enabling users to connect, collaborate, and share social impact initiatives.",
     tags: ["Figma", "UI/UX", "Prototyping"],
     icon: Layout,
-    image: "/project-careconnect.png",
+    image: "project-careconnect.png",
   },
   {
     title: "Inventory Management System",
@@ -76,7 +75,7 @@ const projects = [
       "Digital portal for citizen complaints and administrative management, enabling transparent communication between the public and government agencies.",
     tags: ["Laravel", "PHP", "Public Service"],
     icon: FileText,
-    image: "/project-laporan.png",
+    image: "project-laporan.png",
   },
   {
     title: "WordPress Portfolio Sites",
@@ -85,7 +84,7 @@ const projects = [
       "Designed and built multiple WordPress projects, including profile websites, company sites, and media platforms — both published and local.",
     tags: ["WordPress", "SEO", "Web Design"],
     icon: Globe,
-    image: "/project-wordpress2.png",
+    image: "project-wordpress2.png",
   },
 ]
 
@@ -121,14 +120,12 @@ export function ProjectsSection() {
                 }`}
                 style={{ transitionDelay: `${idx * 100}ms` }}
               >
-                {/* Project image or icon placeholder */}
                 {project.image ? (
                   <div className="relative h-44 w-full overflow-hidden bg-secondary">
-                    <Image
+                    <img
                       src={project.image}
                       alt={project.title}
-                      fill
-                      className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-card/60 to-transparent" />
                   </div>
