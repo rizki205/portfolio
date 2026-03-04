@@ -1,7 +1,6 @@
 "use client"
 
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
-import Image from "next/image"
 
 export function HeroSection() {
   return (
@@ -85,13 +84,11 @@ export function HeroSection() {
             <div className="relative">
               <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-primary/40 via-primary/10 to-transparent blur-md" />
               <div className="relative h-56 w-56 overflow-hidden rounded-full border-2 border-primary/30 bg-card md:h-72 md:w-72">
-                <Image
-                  src="/profile.jpeg"
-                  alt="M. Rizki Alfarabi"
-                  fill
-                  className="object-cover object-top"
-                  priority
-                />
+                <img
+  src="profile.jpeg"
+  alt="M. Rizki Alfarabi"
+  className="h-full w-full object-cover object-top"
+/>
               </div>
               <div className="absolute -bottom-2 -right-2 rounded-full border border-border bg-card px-3 py-1.5 shadow-lg">
                 <span className="font-mono text-xs font-semibold text-primary">3.81 GPA ✦</span>
