@@ -10,9 +10,6 @@ export function AboutSection() {
     <section id="about" className="py-24 px-6">
       <div ref={ref} className="mx-auto max-w-6xl">
         <div className="mb-16">
-          <p className="mb-2 font-mono text-sm tracking-widest text-primary">
-            01. ABOUT ME
-          </p>
           <h2 className="text-3xl font-bold text-foreground md:text-4xl">
             Who I Am
           </h2>
