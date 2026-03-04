@@ -1,11 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  output: 'export', // WAJIB ADA agar menghasilkan folder /out
   images: {
-    unoptimized: true,
+    unoptimized: true, // Sangat disarankan untuk GitHub Pages
   },
-}
+};
 
-export default nextConfig
+export default nextConfig;
